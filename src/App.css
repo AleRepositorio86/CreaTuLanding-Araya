@@ -1,0 +1,176 @@
+/*
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f8f8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.cart-widget {
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  margin-left: 5px;
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+  */
+
+  /* Reset de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo general de la aplicación */
+body {
+  font-family: 'Arial', sans-serif; /* Tipografía amigable */
+  background-color: #f0f8f4;  /* Fondo suave y ligero */
+  color: #333;  /* Texto oscuro para buena legibilidad */
+  line-height: 1.6;
+}
+
+/* Contenedor principal de la App */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el Navbar */
+.navbar {
+  background-color: #48c9b0;  /* Verde agua */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .brandname {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar .categories {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .categories a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.navbar .categories a:hover {
+  background-color: #8e44ad;  /* Morado oscuro para hover */
+  border-radius: 5px;
+}
+
+.navbar .cart {
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.navbar .cart .cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #ff6347;  /* Rojo para destacar */
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo del contenedor de los productos */
+.item-list-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.item-list-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #48c9b0;  /* Verde agua */
+}
+
+.item-list-container .greeting {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Botones */
+.button-primary {
+  background-color: #48c9b0;  /* Verde agua */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.button-primary:hover {
+  background-color: #1abc9c;  /* Verde más oscuro para hover */
+}
+
+.button-secondary {
+  background-color: #8e44ad;  /* Morado */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.button-secondary:hover {
+  background-color: #9b59b6;  /* Morado oscuro para hover */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar .categories {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .item-list-container {
+    padding: 10px;
+  }
+}
