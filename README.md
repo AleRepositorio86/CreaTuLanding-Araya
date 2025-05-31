@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+GRACIAS POR LEER!!! aca dejo una docu de lo que aplique como api :smile:
+Saludos desde Chile 🇨🇱
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+URL apimascotas
+https://apimascotas-fw00.onrender.com
 
-## Available Scripts
+IMPORTANTE: No encontre ninguna api publica que se me acomodara a lo que queria asi que cree una y la publique en RENDER 
+            El plan gratuito pone mi API en modo de hibernacion si no recibe trafico durante un tiempo (15 min aprox). 
+            Como no se cuando lo van a corregir si demora en un inicio cuando lo revisen es por esto :slight_smile:
 
-In the project directory, you can run:
+Aca dejo algunos endpoints algunos los aplique para la entrega otros aun no.... :blush:
 
-### `npm start`
+endpoints aplicados: 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Obtener todos los productos
+https://apimascotas-fw00.onrender.com/productos
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Filtrar productos disponibles
+https://apimascotas-fw00.onrender.com/productos?filtro=disponibles
 
-### `npm test`
+Filtrar productos no disponibles
+https://apimascotas-fw00.onrender.com/productos?filtro=no-disponibles
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Filtrar por categoria (juguete-accesorio-comida-medicina)
+https://apimascotas-fw00.onrender.com/productos?categoria=juguete
 
-### `npm run build`
+Ver detalle de producto por ID 
+https://apimascotas-fw00.onrender.com/productos/10
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+endpoint aun no aplicados!! 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Buscar productos por nombre 
+https://apimascotas-fw00.onrender.com/productos?nombre=perro
 
-### `npm run eject`
+Ordenar productos por nombre asc 
+https://apimascotas-fw00.onrender.com/productos?orden=nombre&direccion=asc
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ordenar productos por ID descendente 
+https://apimascotas-fw00.onrender.com/productos?orden=id&direccion=desc

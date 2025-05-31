@@ -1,33 +1,4 @@
-/*
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #f8f8f8;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.cart-widget {
-  display: flex;
-  align-items: center;
-}
-
-.cart-count {
-  margin-left: 5px;
-  background-color: red;
-  color: white;
-  padding: 2px 6px;
-  border-radius: 50%;
-}
-  */
-
-  /* Reset de márgenes y paddings */
+/* Reset de márgenes y paddings */
 * {
   margin: 0;
   padding: 0;
@@ -42,10 +13,45 @@ body {
   line-height: 1.6;
 }
 
+.cart {
+  position: relative;
+}
+
+.cart-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  background-color: #e0f7fa;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transition: background-color 0.3s;
+}
+
+.cart-icon:hover {
+  background-color: #b2ebf2;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+
 /* Contenedor principal de la App */
 .app-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -127,7 +133,63 @@ body {
   margin-bottom: 30px;
 }
 
-/* Botones */
+/* Estilo para detalle de un item */
+.item-detail {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-detail h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.item-detail p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+/* Estilo para ItemCount */
+.item-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.item-count button {
+  background-color: #48c9b0;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.item-count button:hover {
+  background-color: #1abc9c;
+}
+
+.item-count input {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+  user-select: none;
+}
+
+/* Botones generales */
 .button-primary {
   background-color: #48c9b0;  /* Verde agua */
   color: white;
@@ -137,6 +199,8 @@ body {
   font-size: 1rem;
   display: inline-block;
   transition: background-color 0.3s;
+  cursor: pointer;
+  border: none;
 }
 
 .button-primary:hover {
@@ -152,10 +216,18 @@ body {
   font-size: 1rem;
   display: inline-block;
   transition: background-color 0.3s;
+  cursor: pointer;
+  border: none;
 }
 
 .button-secondary:hover {
   background-color: #9b59b6;  /* Morado oscuro para hover */
+}
+
+.logo-img {
+  height: 80px; /* ajusta según necesidad */
+  padding-left: 15px;
+  object-fit: contain;
 }
 
 /* Estilos responsivos */
@@ -172,5 +244,14 @@ body {
 
   .item-list-container {
     padding: 10px;
+  }
+
+  .item-count {
+    flex-direction: column;
+  }
+
+  .item-count button,
+  .item-count input {
+    width: 100%;
   }
 }
