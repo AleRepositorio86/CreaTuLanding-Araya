@@ -1,28 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import CartWidget from './CartWidget';
+
 function NavBar() {
   return (
     <nav className="navbar">
       <div className="brandname">
-          <Link to="/">
+        <NavLink to="/" end>
           <img src={logo} alt="Logo Mi Tienda" className="logo-img" />
-        </Link>
-        </div>
+        </NavLink>
+      </div>
       <div className="categories">
-        <Link to="/">Todos</Link>
-        <Link to="/filtro/disponibles">Disponibles</Link>
-        <Link to="/filtro/no-disponibles">No disponibles</Link>
-        <Link to="/categoria/juguete">Juguetes</Link>
-        <Link to="/categoria/comida">Comida</Link>
-        <Link to="/categoria/accesorio">Accesorios</Link>
-        <Link to="/categoria/medicina">Medicina</Link>
+        <NavLink to="/" end>Todos</NavLink>
+        <NavLink to="/filtro/disponibles">Disponibles</NavLink>
+        <NavLink to="/filtro/no-disponibles">No disponibles</NavLink>
+        <NavLink to="/categoria/juguete">Juguetes</NavLink>
+        <NavLink to="/categoria/comida">Comida</NavLink>
+        <NavLink to="/categoria/accesorio">Accesorios</NavLink>
+        <NavLink to="/categoria/medicina">Medicina</NavLink>
       </div>
       <div className="cart">
-          <Link to="/carrito" className="cart-icon">
-    🛒
-    <span className="cart-count">3</span> {/* número de ítems */}
-  </Link>
+        <NavLink to="/carrito" className="cart-icon">
+          <CartWidget />
+        </NavLink>
       </div>
     </nav>
   );
