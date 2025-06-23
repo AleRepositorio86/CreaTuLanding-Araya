@@ -1,4 +1,4 @@
-# 🐾 PetShop React
+# 🐾 Michistore React
 
 _E-commerce para venta de productos veterinarios, alimentos, juguetes y accesorios para mascotas._
 
@@ -22,8 +22,11 @@ Este proyecto es una tienda online desarrollada en **React**, que permite:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
+   git clone https://github.com/AleRepositorio86/CreaTuLanding-Araya.git
    cd tu-repo
+
+## Deploy 
+https://michistore.onrender.com/
 
 ## Estructura Firebase
 
